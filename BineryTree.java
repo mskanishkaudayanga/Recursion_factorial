@@ -20,7 +20,8 @@ Scanner sc = new Scanner(System.in);
     }
 
     newtree.print();
-
+    System.out.println( newtree.seach(321));
+   
 
    
 
@@ -79,6 +80,27 @@ class BinerySeachTree{
 
   }
 
+  public boolean seach(int val){
+
+    TreeNode current =root;
+
+    while(current!=null){
+      if(current.key==val){
+        return true;
+      }
+      else if(current.key>val){
+        current=current.left;
+
+      }
+      else if(current.key<val){
+        current=current.right;
+      }
+      
+
+    }
+
+    return false;
+  }
 
 
   public void inOrderPrint(TreeNode node) {
