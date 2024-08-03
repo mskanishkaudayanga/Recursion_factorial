@@ -5,10 +5,6 @@ import java.util.Scanner;
 
 public class MoreRecurtion {
 
-
-  
-
-
   public int questionOne (int i){
     if (i==0){
       return 1;
