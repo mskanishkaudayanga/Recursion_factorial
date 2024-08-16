@@ -4,10 +4,7 @@ public class BineryTree {
   public static void main(String[] args){
 
     BinerySeachTree newtree =new BinerySeachTree();
-
-Scanner sc = new Scanner(System.in);
-  
-
+    Scanner sc = new Scanner(System.in);
     while(true){
       System.out.println("Enter the value to insert");
       int value = sc.nextInt();
@@ -18,15 +15,9 @@ Scanner sc = new Scanner(System.in);
         break;
       }
     }
-
     newtree.print();
-
-
-   
-
   }
 }
-
 
  class TreeNode{
   int key;
